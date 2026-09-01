@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.alennumberoneai.mouse",
+  "name": "Mouse",
+  "version": "1.0.0",
+  "author": "Alen",
+  "license": "MIT",
+  "description": "Control every aspect of mouse and pointer configuration: scroll speed, sensitivity, acceleration, natural scroll, left-handed mode, and per-device scroll factors.",
+  "kinds": ["bar-widget"],
+  "activation": "on-demand",
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Mouse",
+    "description": "Scroll speed, sensitivity, acceleration profile, natural scroll, left-handed mode, and per-device scroll factors.",
+    "category": "Hardware",
+    "aliases": ["mouse", "pointer", "scroll", "trackpad", "touchpad"],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showInBar": true
+    },
+    "schema": [
+      {
+        "key": "showInBar",
+        "type": "boolean",
+        "label": "Show in bar",
+        "defaultValue": true,
+        "description": "Show the mouse icon in the bar. Turn off to only open via IPC."
+      }
+    ]
+  }
+}
