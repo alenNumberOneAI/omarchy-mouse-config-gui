@@ -27,7 +27,7 @@ permanent, set it in `~/.config/hypr/input.lua`.
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/alenNumberOneAI/omarchy-mouse.git --enable
+omarchy plugin add https://github.com/alenNumberOneAI/omarchy-mouse-config-gui.git --enable
 ```
 
 The installer clones into
