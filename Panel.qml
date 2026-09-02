@@ -324,7 +324,10 @@ Panel {
             Row {
               width: parent.width
               Text {
+                // Device names come from external hardware descriptors — render
+                // as plain text so a name containing markup is never rich-text.
                 text: dev.name
+                textFormat: Text.PlainText
                 color: root.foreground
                 font.family: root.fontFamily
                 font.pixelSize: Style.font.caption
